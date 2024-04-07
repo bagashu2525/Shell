@@ -1,0 +1,17 @@
+#pallindrome
+echo 'enter the n:'
+read n
+a=$n
+sum=0
+while [ $n -gt 0 ]
+do
+	r=`expr $n % 10`
+	sum=`expr $sum \* 10 + $r`
+	n=`expr $n / 10`
+done
+if [ $a -eq $sum ]
+then
+	echo 'pallindrome'
+else
+	echo 'not pallindrome'
+fi

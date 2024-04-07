@@ -1,0 +1,12 @@
+#fibo
+echo 'enter the n'
+read n
+a=0
+b=1
+for((i=1; i<=n; i++))
+do
+    echo $a
+    c=$a
+    a=$b
+    b=$((b+c))
+done

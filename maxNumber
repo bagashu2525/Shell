@@ -1,0 +1,18 @@
+#maxnumber
+echo "Enter the two numbers:"
+read a
+read b
+
+# Improved logic for handling incorrect input
+#if [[ -n "$a" && -n "$b" ]]; then  # Check for empty inputs
+  if [[ $a -gt $b ]]; then
+    echo "$a is greater"
+    echo "$b is smaller"
+  else
+    echo "$b is greater"
+    echo "$a is smaller"
+  fi
+#else
+  #echo "Invalid input. Please enter two numbers."
+#fi
+
